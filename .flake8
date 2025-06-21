@@ -1,0 +1,21 @@
+[flake8]
+max-line-length = 88
+extend-ignore = 
+    # Black compatibility
+    E203, E501, W503
+    # Allow lambda expressions
+    E731
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    .pytest_cache,
+    htmlcov,
+    alembic/versions
+max-complexity = 10
+per-file-ignores =
+    # Tests can have longer lines and unused imports
+    tests/*:E501,F401,F811
+    # Alembic files can have unused imports
+    alembic/*:F401 
