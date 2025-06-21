@@ -52,7 +52,7 @@ src/
 1. **Clonar el repositorio**
 ```bash
 git clone <repository-url>
-cd task-manager-api
+cd crehana
 ```
 
 2. **Crear entorno virtual**
@@ -72,9 +72,9 @@ cp .env.example .env
 # Editar .env con tus configuraciones
 ```
 
-5. **Ejecutar migraciones**
+5. **Ejecutar migraciones** (opcional, si se configura Alembic)
 ```bash
-alembic upgrade head
+# alembic upgrade head
 ```
 
 6. **Ejecutar la aplicación**
@@ -95,10 +95,10 @@ docker-compose up -d
 ### Opción 2: Docker manual
 ```bash
 # Construir imagen
-docker build -t task-manager-api .
+docker build -t crehana .
 
 # Ejecutar contenedor
-docker run -p 8000:8000 --env-file .env task-manager-api
+docker run -p 8000:8000 --env-file .env crehana
 ```
 
 ## Ejecutar Pruebas

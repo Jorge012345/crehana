@@ -250,11 +250,3 @@ Este documento registra las principales decisiones técnicas tomadas durante el 
 
 **Justificación:** Trazabilidad completa de modificaciones en tareas.
 
----
-
-## Métricas del Proyecto
-
-- **Cobertura de Tests:** Objetivo 75%+ (según requerimientos)
-- **Líneas de Código:** ~2000-3000 líneas estimadas
-- **Tiempo de Desarrollo:** 4-6 horas (según requerimientos)
-- **Dependencias:** Minimalistas, solo las necesarias 

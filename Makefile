@@ -68,7 +68,7 @@ clean:
 
 # Docker commands
 docker-build:
-	docker build -t task-manager-api .
+	docker build -t crehana .
 
 docker-up:
 	docker-compose up -d
@@ -82,15 +82,15 @@ docker-logs:
 docker-restart:
 	docker-compose restart
 
-# Database commands
-db-upgrade:
-	alembic upgrade head
+# Database commands (requires Alembic configuration)
+# db-upgrade:
+# 	alembic upgrade head
 
-db-downgrade:
-	alembic downgrade -1
+# db-downgrade:
+# 	alembic downgrade -1
 
-db-revision:
-	alembic revision --autogenerate -m "$(MESSAGE)"
+# db-revision:
+# 	alembic revision --autogenerate -m "$(MESSAGE)"
 
 # Quality checks (run all)
 check: format-check lint test
